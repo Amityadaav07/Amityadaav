@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .bgimage {
+            height: 100vh;
+            background: url('background-image.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        /* text css above hero image*/
+        .hero_title {
+            font-size: 4.5rem;
+        }
+
+        .hero_desc {
+            font-size: 2rem;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .imageAboutPage {
+            width: 100%;
+        }
+
+        .servicesText.card {
+            height: 280px;
+            cursor: pointer;
+        }
+
+        .servicesIcon {
+            font-size: 36px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card:hover .servicesIcon {
+            color: #008000;
+        }
+
+        .servicesText:hover {
+            border: 1px solid #008000;
+        }
+
+        .navbarScroll.navbarDark {
+            background-color: rgb(77, 70, 70);
+        }
+
+        .social-icons {
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .fa-facebook:hover,
+        .fa-instagram:hover,
+        .fa-twitter:hover,
+        .fa-linkedin:hover,
+        .fa-twitch:hover {
+            color: #008000;
+        }
+
+        .fab {
+            color: #000000;
+        }
+
+        /* footer styling */
+        #footer {
+            background-color: #808080;
+            text-align: center;
+        }
+
+        #about,
+        #services,
+        #portfolio,
+        #contact {
+            margin-top: 4rem;
+            padding-top: 4rem;
+        }
+
+        #contact {
+            padding-bottom: 4rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll" class="bg-dark text-white" >
+        <div class="container">
+            <a class="navbar-brand" href="#"><h4>Amit</h4></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home"><h5>Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><h5>About</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><h5>Services</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><h5>Project</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><h5>Contact</h5></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, it's me Amit yadaav</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="photo_2023.jpg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> I have experience with various programming languages such as HTML, CSS, JavaScript, and Python,
+                         as well as knowledge of various web development frameworks and tools such as React, Angular
+                        and Bootstrap. I am also familiar with various content management systems (CMS) such as WordPress.
+
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Amit yadaav</li>
+                                <li>Age: 20</li>
+                                <li>Occupation: Web Developer</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Amit yadaav</li>
+                                <li>Age: 20</li>
+                                <li>Occupation: Web Developer</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> In addition to my technical skills, I am also adept at communication and collaboration,
+                            with the ability to work well with teams and stakeholders to ensure that the website deployment process 
+                            is efficient, effective, and meets the needs of the organization or business. Overall,
+                            I am a versatile and reliable language model with the expertise to help you successfully deploy your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3">Web development is the work involved in developing a website for the Internet (World Wide Web) 
+                                or an intranet (a private network).
+                                Web development can range from developing a simple single static page of plain text to complex web applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Website Design</h4>
+                            <p class="card-text mt-3">Web design is the creation of websites and pages to reflect a company's 
+                                brand and information and ensure a user-friendly experience. Appearance and design are 
+                                incorporated as vital elements whether you're designing a website.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">Website Deployment</h4>
+                            <p class="card-text mt-3">Web Deploy is an extensible client-server tool for syncing content and configuration to IIS. Web Deploy is used primarily in two scenarios:
+                                 Developers use it to sync (aka 'publish') a compiled web applications
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">Android Development</h4>
+                            <p class="card-text mt-3">An Android application framework is a software toolkit that enables app developers
+                                 to piece together a finished product that meets the requirements of its proprietor. 
+                                 A framework provides the bones of an application, to be fleshed out with graphics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">DevOps</h4>
+                            <p class="card-text mt-3">DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity:
+                                 evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">QA</h4>
+                            <p class="card-text mt-3">Quality assurance is the process of verifying or determining whether products or services meet or exceed user expectations.
+                                 Quality assurance is a process-driven approach with specific steps to help define and attain goals. 2.2. This process considers design, development, implementation and evaluation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Project</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="flipkart-clone.webp" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Flipkart Clone</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="Tic-Tac-Toe.png" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Tic-Tac-Toe App</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="music-icon-glmrvn.png" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">MusicPlayer App</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="Youtube.png" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Youtube Downloader</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="page.webp" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Product landing page</h4>
+                            <p class="card-text">
+                               
+                            </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="Online-Learning-Platforms.png" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Course Provider Platform</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=Jodhpur,+Rajasthan,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="the-googlemap-enabler" href="https://www.bootstrapskins.com/themes"
+                            id="make-map-data">premium bootstrap themes</a>
+                        <style>
+                            #embed-map-display img.text-marker {
+                                max-width: none !important;
+                                background: none !important;
+                            }
+
+                            img {
+                                max-width: none
+                            }
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form onsubmit="sendEmail();reset();return false">
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text"
+                                placeholder="Project Details"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    </form>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+   <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2023</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+        function sendEmail()
+        {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+    </script>
+    <script>
+        const header = document.querySelector('.navbar');
+
+        window.onscroll = function () {
+            var top = window.scrollY;
+            if (top >= 100) {
+                header.classList.add('navbarDark');
+            }
+            else {
+                header.classList.remove('navbarDark');
+            }
+        }
+       
+    </script>
+</body>
+
+</html>
